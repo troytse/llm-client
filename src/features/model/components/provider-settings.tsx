@@ -246,6 +246,13 @@ export const ProviderSettings = () => {
     ProviderId.LLAMA_CPP
   ].includes(activeConfig?.id as ProviderId)
 
+  const hasNativeModelsSupport = [
+    ProviderId.OLLAMA,
+    ProviderId.LM_STUDIO,
+    ProviderId.LLAMA_CPP,
+    ProviderId.OPENAI
+  ].includes(activeConfig?.id as ProviderId)
+
   if (loading) {
     return (
       <div className="flex justify-center p-8">
@@ -471,7 +478,7 @@ export const ProviderSettings = () => {
               </SettingsFormField>
             )}
 
-            {!isLocalProvider && (
+            {!hasNativeModelsSupport && (
               <SettingsFormField
                 label={t("settings.providers.custom_models")}
                 description={t("settings.providers.custom_models_description")}>

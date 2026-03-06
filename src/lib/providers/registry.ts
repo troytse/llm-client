@@ -40,6 +40,11 @@ export const PROVIDER_REGISTRY: Record<string, ProviderMeta> = {
     id: ProviderId.LLAMA_CPP,
     displayName: "llama.cpp",
     icon: { kind: "lucide", icon: Bot }
+  },
+  [ProviderId.OPENAI]: {
+    id: ProviderId.OPENAI,
+    displayName: "OpenAI",
+    icon: { kind: "lucide", icon: Sparkles }
   }
 }
 
