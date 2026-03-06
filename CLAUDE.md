@@ -175,3 +175,10 @@ Optional RAG Pipeline → Embeddings → Vector DB (Dexie)
 - Provider 支持: `docs/providers.md`
 - RAG 指南: `docs/rag.md`
 - 浏览器优先 RAG 核心: `docs/rag-browser-core.md`
+
+## Active Technologies
+- TypeScript 5.x, React 18+, WXT Framework + React, Plasmo, Lucide Icons, Dexie (001-openai-api-provider)
+- Plasmo Global Storage (provider configurations), Dexie IndexedDB (chats/messages) (001-openai-api-provider)
+
+## Recent Changes
+- 001-openai-api-provider: Added TypeScript 5.x, React 18+, WXT Framework + React, Plasmo, Lucide Icons, Dexie
